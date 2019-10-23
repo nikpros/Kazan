@@ -1,0 +1,85 @@
+.app-body-node
+    color: $mainFontColor
+    text-align: center
+    .title
+        font-size: $fontTitle
+        font-weight: 300
+        text-align: center
+        margin: 0
+        padding: 16px 0
+        animation-delay: .2s
+    .image
+        position: relative
+        height: 191px
+        img
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+        .main
+            height: 58px
+        .bgr
+            &-two
+                height: 147px
+            &-three
+                height: 169px
+            &-four
+                height: 191px
+    .temperature
+        text-align: center
+        font-size: $fontBanner
+        font-weight: 300
+        margin: 0
+        display: inline-block
+        line-height: $fontBanner - 16px
+        animation-delay: .1s
+        &:after
+            content: ' '
+            height: 10px
+            width: 10px
+            border-radius: 100%
+            border: 1px solid white
+            position: absolute
+    .subtitle
+        font-size: $fontTitle
+        font-weight: 300
+        padding: 12px 0 40px
+        margin: 0
+
+.slideToLeft
+    animation: slideToLeft .5s ease-in
+.slideToRight
+    animation: slideToRight .5s ease-in
+
+@keyframes slideToLeft
+    0%
+        transform: translateX(0%)
+    25%
+        transform: translateX(-200%)
+        opacity: 1
+    26%
+        opacity: 0
+    74%
+        transform: translateX(200%)
+        opacity: 0
+    75%
+        opacity: 1
+    100%
+        transform: translateX(0%)
+
+
+@keyframes slideToRight
+    0%
+        transform: translateX(0%)
+    25%
+        transform: translateX(200%)
+        opacity: 1
+    26%
+        opacity: 0
+    74%
+        transform: translateX(-200%)
+        opacity: 0
+    75%
+        opacity: 1
+    100%
+        transform: translateX(0%)

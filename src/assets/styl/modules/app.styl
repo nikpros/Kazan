@@ -1,0 +1,40 @@
+.app
+    max-width: 360px
+    background-color: $background-default
+    margin-left: auto
+    margin-right: auto
+    &-header
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $background-extend
+        color: $mainFontColor
+        h3
+            font-size: $fontText
+            font-weight: 300
+    &-body
+        height: 440px
+    &-footer
+        background-color: $background-extend
+        padding: 0
+        display: flex
+        width: 100%
+        align-items: stretch; /* Default */
+        justify-content: space-between;
+        margin: 0
+        li
+            display: block
+            flex: 0 1 33%
+            list-style-type: none
+            text-align: center
+            img 
+                margin-top: 14px
+                height: 48px
+            
+        .data
+            color: $mainFontColor
+            font-size: $fontText
+            font-weight: 300
+.selected
+    background-color: $background-select
